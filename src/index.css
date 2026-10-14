@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+  --color-paper: #fcfcfc;
+  --color-ink: #0f1114;
+  --color-muted: #5c6066;
+  --color-line: #e4e5e7;
+  --color-line-strong: #c9cbcf;
+  --color-accent: #7a2e46;
+  --color-tint-mauve: #f1ecef;
+  --color-tint-sage: #eceeea;
+  --color-tint-mist: #ebeef2;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper font-sans text-base leading-[1.55] text-ink antialiased;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  /* Etiqueta pequeña en monoespaciada */
+  .eyebrow {
+    @apply font-mono text-[13px] tracking-[0.04em] text-muted uppercase;
+  }
+
+  /* Palabra destacada en serif cursiva dentro de un titular */
+  .accent-word {
+    @apply font-serif text-[1.1em] font-normal tracking-[-0.02em] italic;
+  }
+
+  .section-title {
+    @apply text-[clamp(30px,3.6vw,48px)] leading-[1.05] font-medium tracking-[-0.035em];
+  }
+}
