@@ -30,6 +30,7 @@ export default function Hero() {
           {profile.cvUrl && (
             <a
               href={profile.cvUrl}
+              download="Cristina Advincola.pdf"
               className="inline-flex min-h-13 items-center rounded-full border border-line-strong px-6.5 text-[15px] font-medium hover:border-ink"
             >
               Descargar CV

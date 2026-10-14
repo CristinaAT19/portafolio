@@ -6,7 +6,7 @@ export const profile = {
   role: 'Desarrolladora Frontend y Diseñadora UX/UI',
   tagline: 'diseño y construyo interfaces claras, accesibles y cuidadas para marcas y productos digitales',
   availability: 'Disponible para nuevos proyectos',
-  cvUrl: null, // ruta al PDF, p. ej. '/cv.pdf'
+  cvUrl: '/cristina-advincola-cv.pdf',
   email: 'deliaadvincola@gmail.com',
   bio: 'Me muevo entre el diseño y el código: me gusta entender a quién va dirigida una interfaz antes de dibujarla, y cuidar cada detalle cuando la construyo. Trabajo con React, TypeScript y Tailwind CSS, y busco siempre que lo que hago sea claro, accesible y agradable de usar.',
 }
